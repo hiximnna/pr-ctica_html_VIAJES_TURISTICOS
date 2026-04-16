@@ -6,26 +6,40 @@
 }
 
 body {
-    background: #e3f2fd; /* azul muy claro tipo cielo */
+    background: #e3f2fd;
+    display: flex;
+    justify-content: center;
+}
+
+/* CONTENEDOR PARA CENTRAR */
+main {
+    width: 90%;
+    max-width: 1000px;
 }
 
 /* HEADER */
 header {
-    background: #0288d1; /* azul océano */
+    background: #0288d1;
     color: white;
     text-align: center;
     padding: 20px;
+    width: 100%;
 }
 
-/* NAV */
+/* NAV FIJO */
 nav {
-    background: #004d40; /* verde oscuro tipo selva */
+    background: #004d40;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
 }
 
 nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -35,24 +49,24 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 15px;
 }
 
 nav ul li a:hover {
-    background: #26a69a; /* verde agua */
+    background: #26a69a;
     border-radius: 5px;
 }
 
 /* SECCIONES */
 section {
     padding: 20px;
-    margin: 20px;
+    margin: 20px auto;
     background: #ffffff;
     border-radius: 10px;
 }
 
 h2 {
-    color: #0288d1; /* azul principal */
+    color: #0288d1;
     margin-bottom: 10px;
 }
 
@@ -63,10 +77,29 @@ img {
     border-radius: 10px;
 }
 
+/* BOTÓN BONITO */
+.btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #0288d1;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #26a69a;
+    transform: scale(1.05);
+}
+
 /* FOOTER */
 footer {
     text-align: center;
     padding: 15px;
-    background: #004d40; /* mismo verde del nav */
+    background: #004d40;
     color: white;
+    margin-top: 20px;
+    width: 100%;
 }
