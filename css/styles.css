@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #e3f2fd; /* azul muy claro tipo cielo */
+}
+
+/* HEADER */
+header {
+    background: #0288d1; /* azul océano */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* NAV */
+nav {
+    background: #004d40; /* verde oscuro tipo selva */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background: #26a69a; /* verde agua */
+    border-radius: 5px;
+}
+
+/* SECCIONES */
+section {
+    padding: 20px;
+    margin: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #0288d1; /* azul principal */
+    margin-bottom: 10px;
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #004d40; /* mismo verde del nav */
+    color: white;
+}
