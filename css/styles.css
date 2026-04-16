@@ -7,14 +7,6 @@
 
 body {
     background: #e3f2fd;
-    display: flex;
-    justify-content: center;
-}
-
-/* CONTENEDOR PARA CENTRAR */
-main {
-    width: 90%;
-    max-width: 1000px;
 }
 
 /* HEADER */
@@ -23,7 +15,6 @@ header {
     color: white;
     text-align: center;
     padding: 20px;
-    width: 100%;
 }
 
 /* NAV FIJO */
@@ -32,7 +23,6 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
-    width: 100%;
 }
 
 nav ul {
@@ -57,11 +47,18 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
+/* CONTENIDO CENTRADO */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
 /* SECCIONES */
 section {
     padding: 20px;
-    margin: 20px auto;
-    background: #ffffff;
+    margin: 20px 0;
+    background: white;
     border-radius: 10px;
 }
 
@@ -77,7 +74,14 @@ img {
     border-radius: 10px;
 }
 
-/* BOTÓN BONITO */
+/* GALERÍA */
+.galeria {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* BOTÓN */
 .btn {
     margin-top: 10px;
     padding: 10px 20px;
@@ -101,6 +105,4 @@ footer {
     background: #004d40;
     color: white;
     margin-top: 20px;
-    width: 100%;
 }
-
