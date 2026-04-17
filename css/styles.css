@@ -9,13 +9,7 @@ body {
     background: #e3f2fd;
 }
 
-/* CONTENEDOR GENERAL */
-.contenedor {
-    max-width: 1000px;
-    margin: auto;
-}
-
-/* HEADER (también fijo) */
+/* HEADER FIJO */
 header {
     background: #0288d1;
     color: white;
@@ -26,11 +20,11 @@ header {
     z-index: 1001;
 }
 
-/* NAV FIJO DEBAJO DEL HEADER */
+/* NAV FIJO */
 nav {
     background: #004d40;
     position: sticky;
-    top: 80px; /* altura del header */
+    top: 80px; /* debajo del header */
     z-index: 1000;
 }
 
@@ -56,17 +50,24 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* MAIN */
+/* MAIN ocupa todo el ancho */
 main {
-    padding: 10px;
+    width: 100%;
 }
 
 /* SECCIONES */
 section {
     padding: 20px;
-    margin: 20px 0;
+    margin: 20px;
     background: white;
     border-radius: 10px;
+    text-align: center; /* centra texto */
+}
+
+/* CENTRAR CONTENIDO INTERNO */
+article {
+    max-width: 600px;
+    margin: auto;
 }
 
 h2 {
@@ -74,16 +75,19 @@ h2 {
     margin-bottom: 10px;
 }
 
+/* IMÁGENES CENTRADAS */
 img {
+    display: block;
     width: 100%;
     max-width: 300px;
-    margin-top: 10px;
+    margin: 10px auto;
     border-radius: 10px;
 }
 
 /* GALERÍA */
 .galeria {
     display: flex;
+    justify-content: center;
     gap: 10px;
     flex-wrap: wrap;
 }
@@ -112,28 +116,4 @@ footer {
     background: #004d40;
     color: white;
     margin-top: 20px;
-}
-/* CENTRAR TEXTO */
-section {
-    text-align: center;
-}
-
-/* CENTRAR LISTA */
-ul {
-    list-style-position: inside;
-    text-align: center;
-}
-
-/* CENTRAR IMÁGENES */
-img {
-    display: block;
-    margin: 10px auto;
-}
-
-/* GALERÍA CENTRADA */
-.galeria {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
 }
