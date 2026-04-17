@@ -9,19 +9,28 @@ body {
     background: #e3f2fd;
 }
 
-/* HEADER */
+/* CONTENEDOR GENERAL */
+.contenedor {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* HEADER (también fijo) */
 header {
     background: #0288d1;
     color: white;
     text-align: center;
     padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1001;
 }
 
-/* NAV FIJO */
+/* NAV FIJO DEBAJO DEL HEADER */
 nav {
     background: #004d40;
     position: sticky;
-    top: 0;
+    top: 80px; /* altura del header */
     z-index: 1000;
 }
 
@@ -47,11 +56,9 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* CONTENIDO CENTRADO */
+/* MAIN */
 main {
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
+    padding: 10px;
 }
 
 /* SECCIONES */
