@@ -113,3 +113,27 @@ footer {
     color: white;
     margin-top: 20px;
 }
+/* CENTRAR TEXTO */
+section {
+    text-align: center;
+}
+
+/* CENTRAR LISTA */
+ul {
+    list-style-position: inside;
+    text-align: center;
+}
+
+/* CENTRAR IMÁGENES */
+img {
+    display: block;
+    margin: 10px auto;
+}
+
+/* GALERÍA CENTRADA */
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
