@@ -88,8 +88,12 @@ img {
 .galeria {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
     flex-wrap: wrap;
+}
+
+.galeria img {
+    width: 250px; /* fuerza tamaño para que quepan juntas */
 }
 
 /* BOTÓN */
